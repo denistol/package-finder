@@ -18,7 +18,7 @@
     <main :class="{ loading: store.loading }">
         <div class="ui-container">
             <UiCard v-for="(p, pk) in store.objects"
-                :key="pk"
+                :key="pk + p.package.name"
                 :p="p"
                 @click="selectedObject = p"
             />

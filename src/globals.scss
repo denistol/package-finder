@@ -1,0 +1,35 @@
+// Colors
+$ui-color-text-primary: #FAFAFD;
+$ui-color-text-secondary: #807E98;
+$ui-color-accent: #6966FF;
+$ui-color-1: #1A1A27;
+$ui-color-2: #151522;
+$ui-color-3: #232334;
+// Spacing
+$ui-rounded: 8px;
+$ui-spacing: 12px;
+// Helpers
+body,
+.ui-layout{
+    min-height: 100vh;
+    background-color: $ui-color-1;
+    color: $ui-color-text-primary;
+}
+.ui-text-primary{
+    color: $ui-color-text-primary;
+}
+.ui-text-secondary{
+    color: $ui-color-text-secondary;
+}
+.ui-rounded{
+    border-radius: $ui-rounded;
+}
+.ui-container {
+    @extend .container-lg !optional;
+    display: flex;
+    flex-direction: column;
+    gap: $ui-spacing;
+}
+.ui-body-lock{
+    overflow: hidden;
+}
